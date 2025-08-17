@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -28,6 +30,8 @@ public class SignUpActivity extends AppCompatActivity {
 
     EditText txtEmail, txtPassword;
 
+    TextView txtSignIn;
+
     FirebaseAuth mAuth;
 
     @Override
@@ -44,8 +48,17 @@ public class SignUpActivity extends AppCompatActivity {
         btnSignUp = findViewById(R.id.btnSignUp);
         txtEmail = findViewById(R.id.txtEmail);
         txtPassword = findViewById(R.id.txtPassword);
+        txtSignIn = findViewById(R.id.txtSignIn);
 
         mAuth = FirebaseAuth.getInstance();
+
+        txtSignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
+                finish();
+            }
+        });
 
         btnSignUp.setOnClickListener(v -> {
             String email = txtEmail.getText().toString().trim();

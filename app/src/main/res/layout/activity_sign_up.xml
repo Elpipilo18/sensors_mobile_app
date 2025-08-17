@@ -81,6 +81,17 @@
             android:textColor="@color/black"
             android:textSize="16sp" />
 
+        <!-- Login -->
+        <TextView
+            android:id="@+id/txtSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="¿Ya tienes cuenta? Inicia sesión aquí"
+            android:textColor="@color/purple_700" />
+
         <!-- Botón de registro -->
         <Button
             android:id="@+id/btnSignUp"
