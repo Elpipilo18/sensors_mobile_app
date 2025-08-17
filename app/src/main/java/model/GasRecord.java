@@ -1,15 +1,13 @@
 package model;
 
+import com.google.firebase.Timestamp;
+
 public class GasRecord {
     String id;
     String value;
-    String timestamp;
+    Timestamp timestamp;
 
-    GasRecord(String id, String value, String timestamp) {
-        this.id = id;
-        this.value = value;
-        this.timestamp = timestamp;
-    }
+    public GasRecord() {}
 
     public String getId() {
         return id;
@@ -27,11 +25,11 @@ public class GasRecord {
         this.value = value;
     }
 
-    public String getTimestamp() {
+    public Timestamp getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(String timestamp) {
+    public void setTimestamp(Timestamp timestamp) {
         this.timestamp = timestamp;
     }
 }

@@ -1,15 +1,13 @@
 package model;
 
+import com.google.firebase.Timestamp;
+
 public class MovementRecord {
     String id;
-    Boolean movementDetected;
-    String timestamp;
+    String value;
+    Timestamp timestamp;
 
-    MovementRecord(String id, Boolean movementDetected, String timestamp) {
-        this.id = id;
-        this.movementDetected = movementDetected;
-        this.timestamp = timestamp;
-    }
+    public MovementRecord() {}
 
     public String getId() {
         return id;
@@ -19,19 +17,19 @@ public class MovementRecord {
         this.id = id;
     }
 
-    public Boolean getMovementDetected() {
-        return movementDetected;
+    public String getValue() {
+        return value;
     }
 
-    public void setMovementDetected(Boolean movementDetected) {
-        this.movementDetected = movementDetected;
+    public void setValue(String value) {
+        this.value = value;
     }
 
-    public String getTimestamp() {
+    public Timestamp getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(String timestamp) {
+    public void setTimestamp(Timestamp timestamp) {
         this.timestamp = timestamp;
     }
 }

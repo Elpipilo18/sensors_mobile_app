@@ -20,5 +20,10 @@
             android:layout_margin="10sp"
             android:text="Regresar" />
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvMovement"/>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
