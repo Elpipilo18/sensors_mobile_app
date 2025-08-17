@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/gradient_background"
+        android:padding="20dp"
+        android:layout_margin="12dp"
+        android:elevation="4dp"
+        android:clipToPadding="false"
+        android:clipToOutline="true">
+
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha y Hora:"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/tvMovementDetected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movimiento detectado:"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:padding="6dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

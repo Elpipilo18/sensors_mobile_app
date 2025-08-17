@@ -20,5 +20,33 @@
             android:layout_gravity="end"
             android:layout_margin="10sp"
             android:text="Salir" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Selecciona una opción para visualizar las lecturas de datos registradas hasta el momentos."
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnGasRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Lecturas de gas" />
+
+        <Button
+            android:id="@+id/btnMovementRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Lecturas de movimiento" />
+
+        <Button
+            android:id="@+id/btnTemperatureRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Lecturas de temperatura" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
